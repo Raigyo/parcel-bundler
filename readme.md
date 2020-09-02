@@ -1,6 +1,6 @@
 # Parcel, Module Bundler
 
-> 🔨 How to configurate Parcel. *[Tutoriel Parcel : Parcel, Module bundler](https://www.youtube.com/watch?v=YN9NwWR5ExE)* from [grafikart.fr].
+> 🔨 How to configurate Parcel. *[Tutoriel Parcel : Parcel, Module bundler](https://www.youtube.com/watch?v=YN9NwWR5ExE)* from *grafikart.fr*.
 >
 
 ![parcel-logo](img-readme/parcel-logo.png)
