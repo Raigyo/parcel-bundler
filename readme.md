@@ -3,6 +3,9 @@
 > 🔨 How to configurate Parcel. From '[grafikart.fr](https://dev.to/nanosoftonline/react-hot-loader-with-web-dev-server-aop)'.
 >
 
+![parcel-logo](img-readme/parcel-logo.png)
+
+
 *Parcel.js is a bundler just like rollup, webpack, browserify but its zero-config/no-config and supports bundling the whole web app not just javascript files. Although few bundlers are only Javascript centered. Bundlers like Webpack, Parcel.js are web app bundlers which includes Javascript, it's variants and the whole ecosystem, Images, Stylesheets, Template engines. The above image from webpack sums up what webapp bundlers are.*
 
 ## How to use?
