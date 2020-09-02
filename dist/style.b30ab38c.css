@@ -1,0 +1,2 @@
+body{background-color:#ddd}h1{-webkit-animation:demo 3s infinite;animation:demo 3s infinite}@-webkit-keyframes demo{0%{transform:scale(.9)}50%{transform:scale(1)}to{transform:scale(.9)}}@keyframes demo{0%{transform:scale(.9)}50%{transform:scale(1)}to{transform:scale(.9)}}@media screen and (min-width:756px){.foo{background-color:red}.bar{background-color:#3cff26}}
+/*# sourceMappingURL=/style.b30ab38c.css.map */

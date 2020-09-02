@@ -1,0 +1,41 @@
+body {
+  background: #DDD url("/parcel-js-bkgr.bbf2f315.jpg");
+  color: #ffffff;
+}
+
+h1 {
+  -webkit-animation: demo 3s infinite;
+          animation: demo 3s infinite;
+}
+@-webkit-keyframes demo {
+  from {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+@keyframes demo {
+  from {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+@media screen and (min-width: 756px) {
+  .foo {
+    background-color: #FF0000;
+  }
+  .bar {
+    background-color: #3cff26;
+  }
+}
+
+/*# sourceMappingURL=/style.6d80b553.css.map */

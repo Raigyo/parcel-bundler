@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/style.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA","file":"style.c61ab535.css","sourceRoot":"..","sourcesContent":["$background: #DDD,\r\n\r\nbody {\r\n    background-color: #DDD;\r\n}"]}

@@ -1,0 +1,19 @@
+$backgroundColor: #DDD;
+
+body {
+  background: $backgroundColor url("./parcel-js-bkgr.jpg");
+  color: #ffffff;
+}
+
+h1 {
+  animation: demo 3s infinite;
+}
+
+@media screen and (min-width: 756px) {
+  .foo {
+    background-color: #FF0000;
+  }
+}
+
+
+@import "./animation"
