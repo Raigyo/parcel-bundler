@@ -14,7 +14,7 @@
 
 - [Transformers](https://github.com/parcel-bundler/parcel/tree/v2/packages/transformers): Babel, PostCss... to transform the code.
 
-- [Packagers](https://github.com/parcel-bundler/parcel/tree/v2/packages/packagers): manage behaviours a the end of the chain.
+- [Packagers](https://github.com/parcel-bundler/parcel/tree/v2/packages/packagers): manage behaviours at the end of the chain.
 
 ## How to use?
 
