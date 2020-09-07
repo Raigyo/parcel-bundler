@@ -123,6 +123,72 @@ Delete *.cache* before relaunch dev server.
 
 Babel will convert code, for instance `const` to `var`.
 
+## ESLint, Prettier & EditorConfig
+
+Our three tools all have similar objectives:
+
+make code more consistent in itself and across team members
+detect problematic code patterns that could lead to potential bugs
+ESLint is by far the most popular JavaScript linter. It statically analyzes your code to help you detect formatting issues and find code inconsistencies.
+
+Prettier, while similar to ESLint by formatting your code, does not check your code quality. It just serves as a code formatter. It does this job pretty well though by natively supporting JavaScript but also JSX, Flow, TypeScript, HTML, JSON, CSS and many more languages.
+
+EditorConfig, on the other hand, does not lint or format your code. It merely defines a standard code formatting style guide among all the IDEs and editors used within a team of developers. For instance, if a team uses two main editors such as Sublime Text and Visual Studio Code, EditorConfig allows them to define a common indentation pattern (spaces or tabs) within a single file.
+
+Download the [**ESLint**](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [**Prettier**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extensions for VSCode.
+
+Install Eslint and Prettier libraries:
+
+`npm install eslint prettier --save-dev`
+
+Install [Airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) config:
+
+`npx install-peerdeps --dev eslint-config-airbnb`
+
+Install [**eslint-config-prettier**](https://github.com/prettier/eslint-config-prettier) (disables formatting for ESLint) and [**eslint-plugin-prettier**](https://github.com/prettier/eslint-plugin-prettier) (allows ESLint to show formatting errors as we type):
+
+`npm install -D eslint-config-prettier eslint-plugin-prettier`
+
+In **.eslintrc** (root):
+
+````json
+{
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "es2021": true,
+    "browser": true,
+    "node": true
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"]
+  }
+}
+````
+
+on **.prettierrc** (root)
+
+In VSCode:
+
+Open the User Settings, usinge the shortcut Ctrl + Shift + P then search for: “_Preferences: Open Settings (JSON)_”, then add:
+
+````
+"[javascript]": {
+    "editor.formatOnSave": true
+}
+````
+
+In **.editorconfig** (root):
+
+````json
+[*]
+end_of_line = lf
+charset = utf-8
+indent_style = space
+````
+
+
+
 ## Typescript
 
 If we use Tyscript instead of Javascript, Parcel will convert automatically.
@@ -147,4 +213,7 @@ It will create 'manifest.json'.
 - [Using Babel](https://babeljs.io/setup#installation)
 - [PostCSS](https://parceljs.org/css.html)
 - [What is Parcel.js and how it's faster than webpack?](https://hashnode.com/post/what-is-parceljs-and-how-its-faster-than-webpack-cjrj27c9g01wt84s2elxkdpv5)
+- [Why You Should Use ESLint, Prettier & EditorConfig](https://blog.theodo.com/2019/08/why-you-should-use-eslint-prettier-and-editorconfig-together/)
+- [Integrating Prettier + ESLint + Airbnb Style Guide in VSCode](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a)
+- [Integrating Prettier + ESLint + Airbnb Style Guide + EditorConfig no VSCode](https://medium.com/matheus-barbosa/integrating-prettier-eslint-airbnb-style-guide-editorconfig-no-vscode-ff950263adbf)
 - [reactivestack/parcel-react-ssr](https://github.com/reactivestack/parcel-react-ssr)
