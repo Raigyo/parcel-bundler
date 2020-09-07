@@ -8,6 +8,21 @@
 
 *Parcel.js is a bundler just like rollup, webpack, browserify but its zero-config/no-config and supports bundling the whole web app not just javascript files. Although few bundlers are only Javascript centered. Bundlers like Webpack, Parcel.js are web app bundlers which includes Javascript, it's variants and the whole ecosystem, Images, Stylesheets, Template engines.*
 
+## Table of content
+
+- [Parcel, Module Bundler](#parcel--module-bundler)
+  * [Concepts](#concepts)
+  * [How to use?](#how-to-use-)
+  * [CSS preprocessor: Sass](#css-preprocessor--sass)
+  * [CSS postprocessor](#css-postprocessor)
+  * [Babel: Converting JS](#babel--converting-js)
+  * [ESLint, Prettier & EditorConfig](#eslint--prettier---editorconfig)
+  * [Typescript](#typescript)
+  * [Add plugins](#add-plugins)
+  * [Useful links](#useful-links)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## Concepts
 
 - Assets: Out of the box support for JS, CSS, HTML, file assets. Parcel Detect all the dependecies declare them and build a tree with dependencies
@@ -182,7 +197,7 @@ In VSCode:
 
 Open the User Settings, usinge the shortcut Ctrl + Shift + P then search for: “_Preferences: Open Settings (JSON)_”, then add:
 
-````
+````json
 "[javascript]": {
     "editor.formatOnSave": true
 }
