@@ -155,7 +155,7 @@ In **.eslintrc** (root):
 {
   "extends": ["airbnb", "prettier"],
   "env": {
-    "es2021": true,
+    "es6": true,
     "browser": true,
     "node": true
   },
@@ -166,7 +166,17 @@ In **.eslintrc** (root):
 }
 ````
 
-on **.prettierrc** (root)
+on **.prettierrc** (root):
+
+````json
+{
+  "singleQuote": true,
+  "printWidth": 80,
+  "tabWidth": 2
+}
+````
+
+
 
 In VSCode:
 
