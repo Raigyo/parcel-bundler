@@ -176,7 +176,8 @@ In **.eslintrc** (root):
   },
   "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "no-console": "off"
   }
 }
 ````
