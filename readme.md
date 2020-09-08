@@ -61,7 +61,19 @@ body {
 }
 ````
 
-## CSS postprocessor
+## CSS preprocessor: Less
+
+It's not even necessary to install less, parcel will automatically install less if it detects a less file.
+
+You can import LESS files from JavaScript or html files.
+
+`import './custom.less'`
+
+or
+
+`<link href="./custom.less" rel="stylesheet">`
+
+## CSS postprocessor: PostCSS
 
 Create *.postcssrcrc* at the root with:
 
@@ -235,6 +247,7 @@ It will create 'manifest.json'.
 
 ## Useful links
 
+- [Parcel documentation](https://parceljs.org/)
 - [parcel-bundler/parcel](https://github.com/parcel-bundler/parcel)
 - [Using Babel](https://babeljs.io/setup#installation)
 - [PostCSS](https://parceljs.org/css.html)
