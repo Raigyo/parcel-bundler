@@ -237,13 +237,44 @@ However, It won't be able to do type checking and won't display any error.
 
 All the plugins begins by 'parcel-plugin'.
 
+### parcel-plugin-bundle-manifest
+
 For instance let's add, [parcel-plugin-bundle-manifest](https://www.npmjs.com/package/parcel-plugin-bundle-manifest):
 
 `npm install --save-dev parcel-plugin-bundle-manifest`
 
 It will create 'manifest.json'.
 
+### parcel-plugin-custom-dist-structure
 
+It will generate the structure you specify in the configuration object while also handle all your imports (css, images, js...) which makes it suitable for all use cases, from simple websites all the way to complex React/Angular/Vue projects.
+
+[parcel-plugin-custom-dist-structure](https://www.npmjs.com/package/parcel-plugin-custom-dist-structure)
+
+`npm i parcel-plugin-custom-dist-structure --save-dev`
+
+Example configuration object in package.json:
+
+````JSON
+"customDistStructure": {
+  "config": {
+    // Output JS files to dist/js folder
+    ".js": "js",
+    // Output JPG and PNG files to dist/images folder
+    "images": [
+      ".jpg",
+      ".png"
+    ],
+    // General idea
+    ".fileExtension": "folder/in/dist",
+    "folder/in/dist": [ ".file", ".extensions" ]
+  },
+  "options": {
+    // Enable plugin in development mode (default: false)
+    "development": true
+  }
+}
+````
 
 ## Useful links
 
